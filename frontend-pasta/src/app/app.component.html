@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Plataforma de Eventos</title>
+  <link rel="stylesheet" href="/src/app/app.component.css"> <!-- Link para o arquivo CSS -->
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Plataforma de Eventos</h1>
+      <nav>
+        <ul>
+          <li><a routerLink="/">Início</a></li>
+          <li><a routerLink="/login">Login</a></li>
+          <li><a routerLink="/events">Eventos</a></li>
+          <li><a routerLink="/event-form">Criar Evento</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer>
+    <p>&copy; 2023 Plataforma de Eventos. Todos os direitos reservados.</p>
+  </footer>
+
+  <!-- Incluir outros componentes ou páginas -->
+  <script src="js/script.js"></script> <!-- Link para o arquivo JavaScript -->
+</body>
+</html>

@@ -1,0 +1,10 @@
+<div class="events-container">
+  <h2>Eventos</h2>
+  <div *ngFor="let event of events" class="event-item">
+    <div>
+      <h3>{{ event.title }}</h3>
+      <p>{{ event.description }}</p>
+    </div>
+    <button (click)="deleteEvent(event.id)">Excluir</button>
+  </div>
+</div>

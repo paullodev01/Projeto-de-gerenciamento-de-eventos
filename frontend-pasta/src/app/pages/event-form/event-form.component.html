@@ -1,0 +1,10 @@
+<div class="event-form-container">
+  <h2>Criar/Editar Evento</h2>
+  <form [formGroup]="eventForm" (ngSubmit)="onSubmit()">
+    <input formControlName="title" placeholder="Título" />
+    <textarea formControlName="description" placeholder="Descrição"></textarea>
+    <input formControlName="date" type="date" placeholder="Data" />
+    <input formControlName="location" placeholder="Local" />
+    <button type="submit" [disabled]="!eventForm.valid">Salvar</button>
+  </form>
+</div>
